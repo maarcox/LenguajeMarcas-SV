@@ -1,0 +1,14 @@
+#title1{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#title2{
+    background-color: aquamarine;
+    display: inline;
+}
+
+#title3{
+    background-color: rgb(255, 165, 251);
+    display: inline;
+}
