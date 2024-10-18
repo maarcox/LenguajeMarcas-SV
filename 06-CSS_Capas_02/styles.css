@@ -1,14 +1,67 @@
-#title1{
-    background-color: antiquewhite;
+#title{
+    background-color: rgb(236, 78, 50);
+    text-align: center;
+    border: 5px rgb(7, 4, 4) inset;
+    padding: 20px;
+}
+
+#oferta{
+    background-color: rgb(4, 6, 14);
+    color: aliceblue;
+    display: inline-block;
+    border: 5px rgb(241, 0, 0) ridge;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+    display: block;
     text-align: center;
 }
 
-#title2{
-    background-color: aquamarine;
-    display: inline;
+
+body{
+    background-color: rgb(243, 188, 188);
 }
 
-#title3{
-    background-color: rgb(255, 165, 251);
-    display: inline;
+#card{
+    border: 1px black solid;
+    display: inline-block;
+    margin-left: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+#imgtarjeta{
+    width: 250px;
+    height: 250px;
+}
+
+.border_box{
+    border: 0.5px black solid;
+    padding: 20px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.descrip{
+    padding-top: 100;
+    text-align: center;
+    font-size: 20px;
+}
+
+#tablazapatilla{
+    text-align: center;
+    border: 5px black ridge;
+    background-color: rgb(214, 96, 96);
+    margin-top: 50px;
+    padding: 50px;
+    font-size: 30px;
+}
+
+.boton{
+
+    margin-left: 100px;
+    font-size: 30px;
+    background-color: beige;
 }

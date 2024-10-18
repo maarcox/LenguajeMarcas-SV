@@ -9,22 +9,28 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>ZAPATILLAS NIKE</h1>
-    <h2>OFERTA DEL 50%</h2>
-    <P>Las mejores zapatillas para Runners</P>
-    <p>Correo: <strong>marcospaniego@gmail.com</strong></p>
-    <table>
-        <tr>
+    <h1 id="title">ZAPATILLAS NIKE</h1>
+    <h2 id="oferta"> OFERTA DEL 50%</h2>
+    <div id="card">
+        <img id="imgtarjeta" src="imagenes/tarjeta.png" alt="Tarjeta">
+        <p class="border_box"><strong>METODO DE PAGO</strong></p>
+        <p class="border_box"><strong>TARJETA NIKE</strong></p>
+        <p >Solo descuento con este metodo</p>
+    </div>
+    <P class="descrip">Las mejores zapatillas para Runners</P>
+    <p class="descrip">Correo: <strong>marcospaniego@gmail.com</strong></p>
+    <table align="center" id="tablazapatilla">
+        <tr id="tabla1">
             <td>Imagen</td>
             <td>Descripción</td>
             <td>Precio</td>
-            <td></td>
+            <td> <br></td>
         </tr>
-        <tr>
-            <td><img src="#" alt="Imagen zapatillas"></td>
-            <td>zapatillas para corredores larga distancia.</td>
-            <td>178.90$</td>
-            <td><input type="button" value="Comprar"></td>
+        <tr id="tabla2"> 
+            <td><img src="imagenes/zapatilla.jpg" alt="Imagen zapatillas"></td>
+            <td>zapatillas para corredores <br> larga distancia.</td>
+            <td> <br>178.90$ <br> </td>
+            <td><input type="button" class="boton" value="Comprar"></td>
         </tr>
     </table>
 </body>
