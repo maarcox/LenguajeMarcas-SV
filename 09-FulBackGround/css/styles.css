@@ -1,0 +1,14 @@
+#container p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#container{
+    background-color: rgb(191, 243, 3);
+}
+
+body{
+    background-image: url('../img/wallpaper.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(12, 10, 10);
+}
