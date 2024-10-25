@@ -1,0 +1,47 @@
+header {
+    background-color: #333;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #52476b;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.pie-pagina{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+.pie-pagina li{
+
+    color: aliceblue;
+}
+
+.pie-pagina img{
+    width: 30px;
+    height: 30px;
+}
+
+footer{
+    background-color: #333;
+}
