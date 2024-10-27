@@ -1,0 +1,104 @@
+header {
+    background-color: #333;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: background-color 0.5s;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background-color: #52476b;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+body{
+    background-color: #ddc5a1;
+
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.contenedor{
+    width: 1015px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.contenedor img{
+    width: 500px;
+    height: 500px;
+}
+.contenedor img:hover {
+    transform: 
+    scale(1.05);
+}
+
+.galeria{
+    border: 5px #5e3b24 ridge;
+    background-color: #5e3b24;
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+.galeria p{
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+.galeria p:hover{
+    color: bisque;
+}
+
+.galeria-ancho img{
+    width: 1005px;
+    height: 650px;
+    border: 5px #5e3b24 ridge;
+    background-color: #5e3b24;
+}
+
+
+
+
+
+.pie-pagina{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+.pie-pagina li{
+
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.pie-pagina img{
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+    background-color: #333;
+}

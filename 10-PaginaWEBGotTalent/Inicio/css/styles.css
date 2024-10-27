@@ -1,3 +1,4 @@
+
 header {
     background-color: #333;
 }
@@ -16,7 +17,8 @@ header {
     text-decoration: none;
     color: white;
     padding: 8px 16px;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
+    font-size: 20px;
 }
 
 .menu a:hover {
@@ -26,16 +28,18 @@ header {
 }
 
 body{
-    background-color: #3081c4;
+    background-color: #ddc5a1;
 }
 
 .container{
     width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    
 }
 .presentacion{
     display: flex;   
+    position: relative;
 }
 
 .columna{
@@ -45,12 +49,38 @@ body{
     flex: 1;
     width: 33.3%;
     padding-top: 50px;
+    position: relative;
 }
 
 .columna img{
     width: 600px;
     height: 650px;
-    background-color: #3081c4;
+    background-color: #3081c400;
+}
+
+.columna h1 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Ajusta para que el centro del texto esté en el centro del contenedor */
+    font-size: 70px;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.columna h2 {
+    position: absolute; 
+    top: 60%; 
+    left: 48.4%; 
+    transform: translate(-50%, -50%); /* Ajusta para que el centro del texto esté en el centro del contenedor */
+    font-size: 45px;
+    color: black;
+    font-family: "WindSong", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style:oblique;
+
+    
 }
 
 .pie-pagina{
@@ -63,11 +93,12 @@ body{
 .pie-pagina li{
 
     color: aliceblue;
+    font-size: 20px;
 }
 
 .pie-pagina img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 footer{
