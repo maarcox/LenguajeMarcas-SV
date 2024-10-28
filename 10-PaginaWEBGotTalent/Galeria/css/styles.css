@@ -78,9 +78,6 @@ h1, h2{
 }
 
 
-
-
-
 .pie-pagina{
     list-style: none;
     display: flex;
@@ -97,6 +94,11 @@ h1, h2{
 .pie-pagina img{
     width: 40px;
     height: 40px;
+}
+
+.pie-pagina img:hover{
+    width: 41px;
+    height: 41px;
 }
 
 footer{

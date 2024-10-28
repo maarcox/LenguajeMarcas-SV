@@ -48,6 +48,11 @@ body{
     height: 40px;
 }
 
+.pie-pagina img:hover{
+    width: 41px;
+    height: 41px;
+}
+
 footer{
     background-color: #333;
 }
