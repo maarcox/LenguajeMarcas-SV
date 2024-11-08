@@ -28,7 +28,7 @@ header {
 }
 
 body{
-    background-color: #ddc5a1;
+    background-color: #ddc5a173;
 }
 
 .container{
@@ -58,30 +58,12 @@ body{
     background-color: #3081c400;
 }
 
-.columna h1 {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); /* Ajusta para que el centro del texto esté en el centro del contenedor */
-    font-size: 70px;
-    color: black;
-    font-family:'Times New Roman', Times, serif;
+.logo img {
+    width: 600px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.columna h2 {
-    position: absolute; 
-    top: 60%; 
-    left: 48.4%; 
-    transform: translate(-50%, -50%); /* Ajusta para que el centro del texto esté en el centro del contenedor */
-    font-size: 45px;
-    color: black;
-    font-family: "WindSong", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style:oblique;
-
-    
-}
 
 .pie-pagina{
     list-style: none;
