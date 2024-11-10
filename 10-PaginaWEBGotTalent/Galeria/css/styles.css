@@ -28,53 +28,89 @@ header {
 
 body{
     background-color: #ddc5a173;
+    
 
 }
 
-h1, h2{
+
+/* Sección de introducción */
+.introduccion {
     text-align: center;
+    margin-bottom: 50px;
 }
 
-.contenedor{
-    width: 1015px;
+.introduccion h1 {
+    font-size: 40px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.introduccion p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    
 }
 
-.contenedor img{
-    width: 500px;
-    height: 500px;
-}
-.contenedor img:hover {
-    transform: 
-    scale(1.05);
+
+.barra-separadora {
+    height: 2px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    margin: 40px 0;
 }
 
-.galeria{
-    border: 5px #5e3b24 ridge;
-    background-color: #5e3b24;
+/* Galería */
+.galeria {
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 1200px;
+    background-color: rgba(221, 197, 161, 0.13);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.galeria h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.seccion-galeria h3 {
+    font-size: 28px;
+    color: #333;
     text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Estilo de imágenes */
+.imagenes {
     display: flex;
-    justify-content:space-around;
-    
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.galeria p{
-    color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 700;
+.imagen {
+    width: calc(33% - 20px); /* 3 imágenes por fila */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.galeria p:hover{
-    color: bisque;
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.galeria-ancho img{
-    width: 1005px;
-    height: 650px;
-    border: 5px #5e3b24 ridge;
-    background-color: #5e3b24;
+.imagen:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
 
