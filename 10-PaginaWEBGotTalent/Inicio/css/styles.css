@@ -31,6 +31,132 @@ body{
     background-color: #ddc5a173;
 }
 
+/* Estilos generales del banner */
+.cookie-banner {
+    background-color: aliceblue;
+    height: 250px;
+    width: 450px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.425);
+    overflow: hidden;
+    position: fixed; /* El banner se queda fijo en la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 15px 15px 15px;
+    box-sizing: border-box;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 9999; /* Asegura que el banner esté encima de todo */
+    opacity: 1; /* Inicialmente visible */
+    transition: opacity 0.5s ease-out;
+    animation: show-cookies 2s;
+}
+
+@keyframes show-cookies{
+    0%{
+        transform: translate(-50%, 100%);
+    }
+    100%{
+        transform: (-50%, 0%);
+    }
+}
+/* Imágenes de las galletas */
+.cookie1, .cookie2, .cookie3, .cookie4, .cookie5 {
+    height: 40px;
+    width: auto;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: go-down 3s;
+}
+
+@keyframes go-down{
+    0%{
+        transform: translate(-50%, -260%);
+    }
+    40%{
+        transform: translate(-50%, -260%);
+    }
+}
+
+.cookie1 {
+    top: 10px;
+    left: 10%;
+}
+
+.cookie2 {
+    top: 9%;
+    left: 30%;
+    height: 30px;
+}
+
+.cookie3 {
+    top: 18%;
+    left: 50%;
+}
+
+.cookie4 {
+    top: 10%;
+    left: 70%;
+    height: 45px;
+}
+
+.cookie5 {
+    top: 0px;
+    left: 90%;
+    height: 35px;
+}
+
+/* Títulos y texto */
+.cookie-title {
+    font-size: 28px;
+    margin-bottom: 0;
+    line-height: 28px;
+}
+
+.cookie-info {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    color: black;
+    margin-top: 10px;
+}
+
+/* Botón de aceptar cookies */
+.cookie-confirm {
+    padding: 10px 80px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.cookie-confirm:hover{
+    font-size: 14px;
+}
+
+/* Enlace para la política de cookies */
+.cookie-boton-dos {
+    color: grey;
+    font-size: 15px;
+}
+
+/* Ocultar el banner cuando se haya aceptado */
+.cookie-banner.hidden {
+    opacity: 0;
+    visibility: hidden; /* Se oculta el banner de la vista */
+}
+
+
+/* ------------------------------------------ */
+
 .container{
     width: 1200px;
     margin: 0 auto;
