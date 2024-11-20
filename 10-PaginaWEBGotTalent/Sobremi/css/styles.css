@@ -1,11 +1,21 @@
+/* Header */
 header {
     background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 10px 0;
+    width: 100%;
 }
+
 .menu {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .menu li {
@@ -18,6 +28,8 @@ header {
     padding: 8px 16px;
     transition: background-color 0.5s;
     font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .menu a:hover {
@@ -26,22 +38,34 @@ header {
     font-size: 19px;
 }
 
-body{
+/* Body */
+body {
     background-color: #ddc5a173;
+    padding-top: 60px; /* Asegura que el contenido no quede debajo del menú fijo */
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
 }
 
-.container{
+/* Container */
+.container {
     width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1; /* Permite que el contenido se expanda y empuje el pie de página hacia abajo */
 }
 
-.presentacion{
+/* Presentación */
+.presentacion {
     display: flex;   
     position: relative;
+    flex-wrap: wrap; /* Para permitir el ajuste de las columnas en pantallas más pequeñas */
 }
 
-.columna{
+.columna {
     margin: 50px;
     padding: 10px;
     text-align: center;
@@ -51,8 +75,7 @@ body{
     position: relative;
 }
 
-
-.tarjeta{
+.tarjeta {
     padding: 20px;
     background-color: rgb(248, 250, 232);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Borde difuminado */
@@ -60,70 +83,183 @@ body{
     border-radius: 8px; /* Bordes  redondeados */
 }
 
-.tarjeta:hover{
+.tarjeta:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); 
 }
 
-.container p{
+/* Texto */
+.container p {
     font-size: 25px;
     color: rgb(0, 0, 0);
 }
 
-.enlaces {
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: aliceblue;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%; /* Asegura que ocupe todo el ancho */
     position: relative;
-    padding: 20px;
-    background-color:  #ddc5a173; 
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Borde difuminado */
-    transition: box-shadow 0.3s ease; /* Transición suave */
-    border-radius: 8px; /* Bordes  redondeados */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Lo mantiene al final */
+    margin-bottom: 0; /* Elimina cualquier margen inferior */
+    z-index: 10; /* Asegura que el pie de página esté por encima del fondo */
 }
 
-.enlaces:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); 
-}
-
-.enlaces h2{
-    text-align: center;
-}
-.enlaces h3 {
-    text-align: center;
-    color: #333;
-}
-.enlaces h3:hover{
-    color: red;
-}
-
-.enlaces a{
-    color: #333;
-}
-
-.enlaces a:hover{
-    color: red;
-}
-
-.pie-pagina{
+/* Pie de página */
+.pie-pagina {
     list-style: none;
     display: flex;
-    justify-content:space-around;
-    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    background-color: #333; /* Igual que el fondo del pie de página */
 }
 
-.pie-pagina li{
-
-    color: aliceblue;
-    font-size: 20px;
+.pie-pagina li {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
 }
 
-.pie-pagina img{
-    width: 40px;
-    height: 40px;
+.pie-pagina img {
+    width: 30px;
+    height: 30px;
 }
 
-.pie-pagina img:hover{
-    width: 41px;
-    height: 41px;
+.pie-pagina img:hover {
+    width: 32px;
+    height: 32px;
+    transform: scale(1.1);
 }
 
-footer{
-    background-color: #333;
+/* Estilo específico para los enlaces (Instagram y GitHub) */
+.pie-pagina .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .pie-pagina {
+        flex-direction: column;
+    }
+
+    .pie-pagina li {
+        font-size: 14px;
+    }
+}
+
+
+/* Media Queries para Dispositivos Móviles */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%; /* Hace que el contenido sea un poco más estrecho en pantallas grandes */
+    }
+
+    .presentacion {
+        flex-direction: column; /* Cambia el diseño de las columnas a fila en dispositivos más pequeños */
+    }
+
+    .columna {
+        width: 100%; /* Las columnas ocuparán el 100% del ancho en pantallas pequeñas */
+        margin: 20px 0;
+    }
+
+    .menu a {
+        font-size: 18px; /* Reduce el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .tarjeta, .enlaces {
+        padding: 15px; /* Reducir el padding para que se ajuste mejor en pantallas pequeñas */
+    }
+
+    .enlaces h2 {
+        font-size: 30px; /* Tamaño de fuente ajustado para h2 */
+    }
+
+    .enlaces h3 {
+        font-size: 20px; /* Tamaño de fuente ajustado para h3 */
+    }
+
+    footer {
+        padding: 20px 10px; /* Ajuste del padding en el pie de página */
+    }
+
+    .pie-pagina li {
+        font-size: 18px; /* Ajuste en el tamaño de texto de los elementos del pie de página */
+    }
+
+    .pie-pagina img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Media Queries para Dispositivos Móviles Pequeños */
+@media (max-width: 480px) {
+    .menu {
+        flex-direction: column; /* Cambia el menú a vertical en pantallas pequeñas */
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .columna {
+        width: 100%; /* Las columnas ocuparán todo el ancho en dispositivos muy pequeños */
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 100%; /* Ancho completo del contenedor en dispositivos pequeños */
+        padding: 15px;
+    }
+
+    .presentacion {
+        flex-direction: column; /* Asegura que las columnas se apilen una encima de otra */
+    }
+
+    .menu a {
+        font-size: 16px; /* Ajuste en el tamaño de fuente para dispositivos muy pequeños */
+    }
+
+    .tarjeta, .enlaces {
+        padding: 10px; /* Menos padding en pantallas más pequeñas */
+    }
+
+    .enlaces h2 {
+        font-size: 28px; /* Ajuste de tamaño en h2 */
+    }
+
+    .enlaces h3 {
+        font-size: 18px; /* Ajuste de tamaño en h3 */
+    }
+
+    .pie-pagina li {
+        font-size: 16px; /* Reducción en el tamaño del texto en el pie de página */
+    }
+
+    .pie-pagina img {
+        width: 30px;
+        height: 30px;
+    }
 }

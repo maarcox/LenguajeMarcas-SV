@@ -1,11 +1,33 @@
+/* Fondo y cuerpo */
+body {
+    background-color: #ddc5a173;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la pantalla */
+    margin: 0; /* Elimina márgenes */
+}
+
+/* Header */
 header {
     background-color: #333;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Hace que el menú esté fijo en la parte superior */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
 }
+
+/* Menu */
 .menu {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .menu li {
@@ -15,27 +37,23 @@ header {
 .menu a {
     text-decoration: none;
     color: white;
-    padding: 8px 16px;
-    transition: background-color 0.5s;
-    font-size: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    letter-spacing: 1px;
 }
 
 .menu a:hover {
     background-color: #52476b;
     border-radius: 4px;
-    font-size: 19px;
+    transform: translateY(-2px);
 }
-
-body{
-    background-color: #ddc5a173;
-    
-
-}
-
 
 /* Sección de introducción */
 .introduccion {
     text-align: center;
+    margin-top: 80px; /* Ajusta el margen superior para que no se sobreponga con el menú */
     margin-bottom: 50px;
 }
 
@@ -54,7 +72,7 @@ body{
     margin: 0 auto;
 }
 
-
+/* Barra separadora */
 .barra-separadora {
     height: 2px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
@@ -113,30 +131,78 @@ body{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
+/* Footer */
+footer {
+    background-color: #333;
+    color: aliceblue;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    position: relative;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Lo mantiene al final */
+    margin-bottom: 0; /* Elimina cualquier margen inferior */
+    z-index: 10; /* Asegura que el pie de página esté por encima del fondo */
+}
 
-.pie-pagina{
+/* Pie de página */
+.pie-pagina {
     list-style: none;
     display: flex;
-    justify-content:space-around;
-    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    background-color: #333; /* Igual que el fondo del pie de página */
 }
 
-.pie-pagina li{
-
-    color: aliceblue;
-    font-size: 20px;
+.pie-pagina li {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
 }
 
-.pie-pagina img{
-    width: 40px;
-    height: 40px;
+.pie-pagina img {
+    width: 30px;
+    height: 30px;
 }
 
-.pie-pagina img:hover{
-    width: 41px;
-    height: 41px;
+.pie-pagina img:hover {
+    width: 32px;
+    height: 32px;
+    transform: scale(1.1);
 }
 
-footer{
-    background-color: #333;
+/* Estilo específico para los enlaces (Instagram y GitHub) */
+.pie-pagina .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .pie-pagina {
+        flex-direction: column;
+    }
+
+    .pie-pagina li {
+        font-size: 14px;
+    }
+}
+
+
